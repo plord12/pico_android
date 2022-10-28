@@ -53,13 +53,13 @@ export const ComfortZone = (props) => {
       return 'summer';
     } else {
       if (m === 4) {
-        if (1 <= d <= 15) {
+        if (1 <= d && d <= 15) {
           return 'winter';
         } else {
           return 'summer';
         }
       } else if (m === 10) {
-        if (1 <= d <= 15) {
+        if (1 <= d && d <= 15) {
           return 'summer';
         } else {
           return 'winter';
@@ -76,6 +76,7 @@ export const ComfortZone = (props) => {
         let c2 = -1.575 * temp + 61.5875;
         let c3 = -7.05 * temp + 223.975;
         let c4 = -35.3 * temp + 887.5;
+        console.log({c1, c2, c3, c4});
         if (humd >= c1 && humd >= c2 && humd <= c3 && humd <= c4) {
           return colors.azure;
         } else {
@@ -95,9 +96,17 @@ export const ComfortZone = (props) => {
         }
       },
     };
+    console.log("=========================")
+    console.log("1 = ", getWinterOrSummer())
+    console.log("2 = ", !isNaN(temp))
+    console.log("3 = ", !isNaN(humd))
+    console.log("4 = ", (!isNaN(temp) || !isNaN(humd)))
+    console.log("=========================")
     return checkComfort[getWinterOrSummer()](temp, humd);
   }
 
+  checkSeason(temp, humd)
+  
   return (
     <View style={{ alignItems: 'center' }}>
       <View style={{ height: 250, padding: 20, flexDirection: 'row' }}>
@@ -116,37 +125,49 @@ export const ComfortZone = (props) => {
                 22.5°C, 79.5% / 26.0°C, 57.3% / 27.0°C, 19.8% / 23.5°C, 24.4%
               */}
               <Polygon
-                points={getWinterOrSummer() === 'winer' ? summer : winter}
+                points={getWinterOrSummer() === 'witner' ? summer : winter}
                 fill="rgba(0, 172, 255, 0.4)"
                 strokeWidth="1"
                 opacity="70"
               />
-              <Circle cx={temp} cy={humd} r={5} fill={colors.white} stroke={colors.veryLightPink} />
-              <Circle
-                cx={temp}
-                cy={humd}
-                r={2}
-                fill={checkSeason(Math.round(initialTemp), Math.round(initialHumd))}
-              />
-              <G>
-                <Rect
-                  x={temp - 40}
-                  y={humd + 10}
-                  rx={5}
-                  ry={5}
-                  width={80}
-                  height={30}
-                  fill={colors.white}
-                  stroke={colors.veryLightPink}
-                />
-                <Text
-                  x={temp - 30}
-                  y={humd + 30}
-                  stroke={checkSeason(Math.round(initialTemp), Math.round(initialHumd))}>
-                  {tempMod ? Math.round((initialTemp) * 1.8 + 32) : Math.round(initialTemp)}
-                  {tempMod ? '°F' : '°C'} / {Math.round(initialHumd)}%
-                </Text>
-              </G>
+              {
+                 /*  
+                   2022.10.21 by Steve
+                   - Picohome이 연결되지 않아 temp 값과 humd값이 NaN일 경우 앱에서 Comfort Zone 실행시 에러 발생하여 추가
+                */
+                (!isNaN(temp) && !isNaN(humd)) ? (
+                  <View>
+                    <Circle cx={temp} cy={humd} r={5} fill={colors.white} stroke={colors.veryLightPink} />
+                    <Circle
+                      cx={temp}
+                      cy={humd}
+                      r={2}
+                      fill={checkSeason(Math.round(initialTemp), Math.round(initialHumd))}
+                    />
+                    <G>
+                      <Rect
+                        x={temp - 40}
+                        y={humd + 10}
+                        rx={5}
+                        ry={5}
+                        width={80}
+                        height={30}
+                        fill={colors.white}
+                        stroke={colors.veryLightPink}
+                      />
+                      <Text
+                        x={temp - 30}
+                        y={humd + 30}
+                        stroke={checkSeason(Math.round(initialTemp), Math.round(initialHumd))}>
+                        {tempMod ? Math.round((initialTemp) * 1.8 + 32) : Math.round(initialTemp)}
+                        {tempMod ? '°F' : '°C'} / {Math.round(initialHumd)}%
+                      </Text>
+                    </G>  
+                  </View>
+                ) : (
+                  <View></View>
+                )
+              }
               <Grid />
             </LineChart>
           </View>

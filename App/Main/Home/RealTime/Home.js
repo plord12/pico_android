@@ -21,7 +21,7 @@ import {
   DeviceContext,
   OnlineContext,
 } from '../../../context';
-import useCheckFirmwareVersion from '../../../src/hooks/useCheckFirmwareVersion';
+import useCheckFirmwareVersion from '../../../src/Hooks/useCheckFirmwareVersion';
 import LinearGradient from 'react-native-linear-gradient';
 import BitSwiper from 'react-native-bit-swiper';
 import Geolocation from '@react-native-community/geolocation';

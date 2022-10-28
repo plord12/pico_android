@@ -18,7 +18,7 @@ import database from '@react-native-firebase/database';
 import WifiManager from 'react-native-wifi-reborn';
 import base64 from 'react-native-base64';
 import colors from '../../../src/colors';
-import useTimer from '../../../src/hooks/useTimer';
+import useTimer from '../../../src/Hooks/useTimer';
 
 export const bleManager = new BleManager();
 const CONNECT_TIME = 30

@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect} from 'react';
 import { StyleSheet, View, Text, Image, Dimensions, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { DeviceContext, LanguageContext, PicoContext, SettingContext, UserContext } from '../../../context';
-import useCheckFirmwareVersion from '../../../src/hooks/useCheckFirmwareVersion';
+import useCheckFirmwareVersion from '../../../src/Hooks/useCheckFirmwareVersion';
 import Modal from 'react-native-modal';
 import colors from '../../../src/colors';
 
