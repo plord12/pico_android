@@ -1,0 +1,147 @@
+{
+  "project_info": {
+    "project_number": "369252391797",
+    "firebase_url": "https://pico-home.firebaseio.com",
+    "project_id": "pico-home",
+    "storage_bucket": "pico-home.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369252391797:android:46a73a8bf3425d28",
+        "android_client_info": {
+          "package_name": "com.brilcom.bandi.pico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369252391797-mbee5ngklrhf1l40g79ejlm4b94setqp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brilcom.bandi.pico",
+            "certificate_hash": "b3ab511dd913c75f73a560a82dd2a3501753922c"
+          }
+        },
+        {
+          "client_id": "369252391797-hnn0pem5src4n7cfs7u0prf352gq2ck6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brilcom.bandi.pico",
+            "certificate_hash": "d2ed7cddb61703a65a56d4f678aac16fc3984116"
+          }
+        },
+        {
+          "client_id": "369252391797-a8ujo1rh44qgcm8rc3o9c2i97q2h2lpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brilcom.bandi.pico",
+            "certificate_hash": "36b4aeafb4a65bc0342a39375719fbdac598d4c1"
+          }
+        },
+        {
+          "client_id": "369252391797-0u2onalhp1v1rsb1vubqpu8pedjadai4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brilcom.bandi.pico",
+            "certificate_hash": "1f4c4cc3a084ff5708cf5fc26c7c1e1c05120335"
+          }
+        },
+        {
+          "client_id": "369252391797-613nb45c3ol9rkvtkbofshp2te8knd5j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brilcom.bandi.pico",
+            "certificate_hash": "758584c8f6140276ee72349151ddb24fd21b2127"
+          }
+        },
+        {
+          "client_id": "369252391797-j07dc7o3g1rf2vnsbmkvi5t9ljie3epj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt43WLV5osede8Ya2ncuykCb14iUDuh4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369252391797-j07dc7o3g1rf2vnsbmkvi5t9ljie3epj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "369252391797-aenn3b1f5v2rvj8ec9ap5tor4quqfvcb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.brilcom.bandi.pico"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369252391797:android:e61f4f400c637cf89a513c",
+        "android_client_info": {
+          "package_name": "com.picoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369252391797-i5l64esmhpjuhoetdn6ruc6a5ital49a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.picoapp",
+            "certificate_hash": "1f4c4cc3a084ff5708cf5fc26c7c1e1c05120335"
+          }
+        },
+        {
+          "client_id": "369252391797-ih3msjkstm4mbginnb1ne8q8uuemmqs6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.picoapp",
+            "certificate_hash": "b3ab511dd913c75f73a560a82dd2a3501753922c"
+          }
+        },
+        {
+          "client_id": "369252391797-jr526p6n1udj7k757gvjccfhi5tiq28m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.picoapp",
+            "certificate_hash": "9017222a2ab54545252a157a6b0a0919e3689967"
+          }
+        },
+        {
+          "client_id": "369252391797-j07dc7o3g1rf2vnsbmkvi5t9ljie3epj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt43WLV5osede8Ya2ncuykCb14iUDuh4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369252391797-j07dc7o3g1rf2vnsbmkvi5t9ljie3epj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "369252391797-aenn3b1f5v2rvj8ec9ap5tor4quqfvcb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.brilcom.bandi.pico"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
